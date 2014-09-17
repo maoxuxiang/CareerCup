@@ -68,7 +68,7 @@ public class quickSort {
 		int[] array = {1,54,675,234,2346,79,450,954,22,6779,567};
 		quickSort(array);
 		for (int i =0; i<array.length; i++) {
-			System.out.println(array[i] + "d");
+			System.out.println(array[i] + " ");
 		}
 	
 	}

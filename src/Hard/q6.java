@@ -13,7 +13,6 @@ public class q6 {
 	
 	public static int[] first(int[] arr, int k) {
 		PriorityQueue<Integer> heap = new PriorityQueue<Integer>(k, new Comparator<Integer>() {
-			@Override
 			public int compare (Integer a, Integer b) {
 				return -a.compareTo(b);
 			}

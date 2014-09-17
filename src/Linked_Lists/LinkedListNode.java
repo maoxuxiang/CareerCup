@@ -13,5 +13,9 @@ public class LinkedListNode {
 		this.data = (Integer) null;
 		this.next = null;
 	}
+	public void setNext(LinkedListNode more) {
+		this.next = more;
+		
+	}
 
 }
