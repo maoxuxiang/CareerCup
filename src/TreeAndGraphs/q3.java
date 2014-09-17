@@ -7,14 +7,14 @@ package TreeAndGraphs;
 
 public class q3 {
 	
-	TreeNode createMinimalBST (int[] arr, int start, int end) {
-		if(end < start)
+	TreeNode createMinimalBST (int[] arr, int start, int terminal) {
+		if(terminal < start)
 			return null;
 		
-		int mid = (start + end) / 2;
+		int mid = (start + terminal) / 2;
 		TreeNode n = new TreeNode(arr[mid]);
 		n.left = createMinimalBST(arr, start, mid-1);
-		n.right = createMinimalBST(arr, mid+1, end);
+		n.right = createMinimalBST(arr, mid+1, terminal);
 		return n;
 	}
 	

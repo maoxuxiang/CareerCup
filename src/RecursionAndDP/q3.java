@@ -15,9 +15,9 @@ public class q3 {
 		return findMagicIndex(array, 0, array.length-1);
 	}
 	
-	public int findMagicIndex(int[] array, int start, int end) {
+	public int findMagicIndex(int[] array, int start, int terminal) {
 		
-		int mid = (start + end)/2;
+		int mid = (start + terminal)/2;
 		if (array[mid] == mid) {
 			return mid;
 		}
@@ -30,7 +30,7 @@ public class q3 {
 		}
 		
 		int max = Math.max(array[mid], mid+1);
-		int right = findMagicIndex(array, max, end);
+		int right = findMagicIndex(array, max, terminal);
 		return right;
 		
 	}

@@ -14,7 +14,7 @@ public class q4 {
 		set.add(1);
 		set.add(2);
 		set.add(3);
-		ArrayList<ArrayList<Integer>> allSubsets = getSubsets(set);
+		ArrayList<ArrayList<Integer>> allSubsets = getSubsets(set,0);
 		
 		for (int i =0; i<allSubsets.size(); i++) {
 			System.out.print(allSubsets.get(i) + " ");

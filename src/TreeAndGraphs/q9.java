@@ -1,6 +1,6 @@
 /*
  * You are given a binary tree in which each node contains a value. Design an algorithm to print all paths which sum to a given value.
- * The path does not need to start or end at the root or a leaf.
+ * The path does not need to start or terminal at the root or a leaf.
  */
 
 package TreeAndGraphs;
@@ -33,8 +33,8 @@ public class q9 {
 		findSum (node, sum, path, 0);
 	}
 	
-	void print (int[] path, int start, int end) {
-		for (int i = start; i<= end; i++) {
+	void print (int[] path, int start, int terminal) {
+		for (int i = start; i<= terminal; i++) {
 			System.out.print(path[i] + " ");
 		}
 		System.out.println();

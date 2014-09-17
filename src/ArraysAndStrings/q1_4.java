@@ -1,7 +1,7 @@
 package ArraysAndStrings;
 /*
  * Write a method to replace all spaces in a string with '%20'. You may assume that the string 
- * has sufficient space at the end of the string to hold the additional characters, and that you
+ * has sufficient space at the terminal of the string to hold the additional characters, and that you
  * are givn the "true" length of the string. (Note: if implementing in Java, please use a character 
  * array so that you can perform this operation in place.)
  */
@@ -37,7 +37,7 @@ public class q1_4 {
 		
 		newLength = length + spaceCount*2;
 //		char[] ss = new char[newLength];
-		s[newLength] = '\0'; // '\0' is used to mark the end of the characters
+		s[newLength] = '\0'; // '\0' is used to mark the terminal of the characters
 		for (i = length - 1; i>=0; i--) {
 			if (s[i]==' ') {
 				s[newLength - 1]='0';

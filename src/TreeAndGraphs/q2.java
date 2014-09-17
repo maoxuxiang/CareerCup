@@ -19,7 +19,7 @@ public class q2 {
 		unvisited, visiting, visited;
 	}
 	
-	public static boolean search(Graph g, Node start, Node end) {
+	public static boolean search(Graph g, Node start, Node terminal) {
 		LinkedList<Node> q = new LinkedList<Node>();
 		
 		for (Node u : g.getNodes()) {
@@ -35,7 +35,7 @@ public class q2 {
 	    	if (u != null) {
 	    		for (Node v : u.getAdjacent()) {
 	    			if(v.state == State.unvisited) {
-	    				if (v == end)
+	    				if (v == terminal)
 	    					return true;
 	    				else {
 	    					v.state = State.visiting;

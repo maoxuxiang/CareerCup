@@ -1,5 +1,6 @@
 package RecursionAndDP;
 
+import java.awt.POINT;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -16,8 +17,8 @@ import java.util.Hashtable;
 
 public class q2 {
 	
-	public boolean getPath(int x, int y, ArrayList<Point> path, Hashtable<Point, Boolean> cache) {
-		Point p = new Point(x,y);
+	public boolean getPath(int x, int y, ArrayList<POINT> path, Hashtable<POINT, Boolean> cache) {
+		Point p = new POINT(x,y);
 		path.add(p);
 		
 		if (cache.contains(p)) {

@@ -42,7 +42,7 @@ public class Q5 {
 	}
 	
 	public static void main(String[] args) {
-		 ArrayList<String> s = getPerms("mo");
+		 ArrayList<String> s = getPerms("mop");
 		 System.out.print(s);
 	}
 
